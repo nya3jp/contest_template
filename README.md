@@ -1,9 +1,9 @@
 # Example Contest
 
-This is an example for maintaining programming contest problems with [Bazel]
-and [rules_contest].
+This is an example Git repository maintaining programming contest problems
+with [Bazel] and [rules_contest].
 
-You can use this repository as a template of a new Git repository for your
+You can use this repository as a template of a new repository for your
 programming contest. Click the [Use this template] button in GitHub UI to
 quickly create a new repository.
 
