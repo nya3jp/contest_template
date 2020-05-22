@@ -8,6 +8,7 @@ markdown(
 jinja2_template(
     name = "statement_subst",
     srcs = ["statement.md"],
+    files = ["//sqrt/judge:sample_outputs"],
     vars = ["constraints.yaml"],
     dataset = "//sqrt/judge:dataset",
 )

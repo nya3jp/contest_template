@@ -6,26 +6,31 @@ simple_judge(
     comparator = ":comparator",
 )
 
+filegroup(
+    name = "sample_outputs",
+    srcs = glob(["*.out"]),
+)
+
 sample_test(
     name = "sample_test",
-    files = glob(["*.out"]),
+    files = [":sample_outputs"],
     judge = ":judge",
 )
 
 dataset_derive(
     name = "dataset",
     exec = "//sqrt/python",
-    dataset = ":input",
+    dataset = ":inputs",
 )
 
 dataset_merge(
-    name = "input",
+    name = "inputs",
     files = glob(["*.in"]),
-    datasets = [":input_generated"],
+    datasets = [":inputs_generated"],
 )
 
 dataset_generate(
-    name = "input_generated",
+    name = "inputs_generated",
     exec = ":generator",
 )
 

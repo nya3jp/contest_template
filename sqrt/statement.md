@@ -8,7 +8,7 @@ Compute the square root of an integer.
 a
 ```
 
-a is an integer between 1 and {{ VALUE_MAX }}.
+a is an integer between 1 and {{ vars.VALUE_MAX }}.
 
 ## Output
 
@@ -16,7 +16,7 @@ a is an integer between 1 and {{ VALUE_MAX }}.
 b
 ```
 
-b is the square root of a. It may contain an error up to {{ ERROR_MAX }}.
+b is the square root of a. It may contain an error up to {{ vars.ERROR_MAX }}.
 
 ## Sample Input/Output 1
 
@@ -25,7 +25,7 @@ b is the square root of a. It may contain an error up to {{ ERROR_MAX }}.
 ```
 
 ```
-{{ dataset["00-sample1.out"] | trim }}
+{{ files["00-sample1.out"] | trim }}
 ```
 
 ## Sample Input/Output 2
@@ -35,7 +35,7 @@ b is the square root of a. It may contain an error up to {{ ERROR_MAX }}.
 ```
 
 ```
-{{ dataset["00-sample2.out"] | trim }}
+{{ files["00-sample2.out"] | trim }}
 ```
 
 ## Sample Input/Output 3
@@ -45,5 +45,5 @@ b is the square root of a. It may contain an error up to {{ ERROR_MAX }}.
 ```
 
 ```
-{{ dataset["00-sample3.out"] | trim }}
+{{ files["00-sample3.out"] | trim }}
 ```

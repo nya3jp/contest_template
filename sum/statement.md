@@ -25,7 +25,7 @@ s is the sum of a and b.
 ```
 
 ```
-{{ dataset["00-sample1.diff"] | trim }}
+{{ files["00-sample1.out"] | trim }}
 ```
 
 ## Sample Input/Output 2
@@ -35,5 +35,5 @@ s is the sum of a and b.
 ```
 
 ```
-{{ dataset["00-sample2.diff"] | trim }}
+{{ dataset["00-sample2.ans"] | trim }}
 ```
