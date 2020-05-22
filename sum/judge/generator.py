@@ -3,7 +3,7 @@
 import os
 import random
 
-from ab import constraints
+from sum import constraints
 
 seq = 0
 

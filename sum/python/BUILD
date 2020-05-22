@@ -9,5 +9,5 @@ py_binary(
 solution_test(
     name = "python_test",
     solution = ":python",
-    judge = "//ab/judge",
+    judge = "//sum/judge",
 )

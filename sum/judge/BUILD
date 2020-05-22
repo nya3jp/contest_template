@@ -7,7 +7,7 @@ simple_judge(
 
 dataset_derive(
     name = "dataset",
-    exec = "//ab/cpp",
+    exec = "//sum/cpp",
     dataset = ":dataset_merged",
     input_extension = "in",
     output_extension = "diff",
@@ -27,13 +27,13 @@ dataset_generate(
 py_binary(
     name = "generator",
     srcs = ["generator.py"],
-    deps = ["//ab:constraints_py"],
+    deps = ["//sum:constraints_py"],
 )
 
 py_binary(
     name = "validator",
     srcs = ["validator.py"],
-    deps = ["//ab:constraints_py"],
+    deps = ["//sum:constraints_py"],
 )
 
 dataset_test(

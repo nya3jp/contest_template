@@ -1,4 +1,4 @@
-# A+B Problem
+# Sum two numbers
 
 Compute the sum of two numbers.
 

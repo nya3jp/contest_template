@@ -3,7 +3,7 @@
 import re
 import sys
 
-from ab import constraints
+from sum import constraints
 
 
 def main():

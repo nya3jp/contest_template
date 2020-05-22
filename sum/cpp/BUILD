@@ -8,5 +8,5 @@ cc_binary(
 solution_test(
     name = "cpp_test",
     solution = ":cpp",
-    judge = "//ab/judge",
+    judge = "//sum/judge",
 )

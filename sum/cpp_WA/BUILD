@@ -8,6 +8,6 @@ cc_binary(
 solution_test(
     name = "cpp_WA_test",
     solution = ":cpp_WA",
-    judge = "//ab/judge",
+    judge = "//sum/judge",
     judge_args = ["--expect=reject_any"]
 )
