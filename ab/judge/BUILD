@@ -2,19 +2,25 @@ package(default_visibility=["//visibility:public"])
 
 simple_judge(
     name = "judge",
-    datasets = [":dataset"],
+    dataset = ":dataset",
 )
 
 dataset_derive(
     name = "dataset",
-    datasets = glob(["*.in", "*.diff"]) + [":generated"],
     exec = "//ab/cpp",
+    dataset = ":dataset_merged",
     input_extension = "in",
     output_extension = "diff",
 )
 
+dataset_merge(
+    name = "dataset_merged",
+    files = glob(["*.in", "*.diff"]),
+    datasets = [":dataset_generated"],
+)
+
 dataset_generate(
-    name = "generated",
+    name = "dataset_generated",
     exec = ":generator",
 )
 
@@ -33,5 +39,5 @@ py_binary(
 dataset_test(
     name = "dataset_test",
     exec = ":validator",
-    datasets = [":dataset"],
+    dataset = ":dataset",
 )

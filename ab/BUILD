@@ -9,7 +9,7 @@ jinja2_template(
     name = "statement_subst",
     srcs = ["statement.md"],
     vars = ["constraints.yaml"],
-    datasets = ["//ab/judge:dataset"],
+    dataset = "//ab/judge:dataset",
 )
 
 py_yaml_library(
