@@ -1,25 +1,14 @@
-package(default_visibility=["//visibility:public"])
+package(default_visibility=["//sum:__subpackages__"])
 
-simple_judge(
-    name = "judge",
-    dataset = ":dataset",
+py_binary(
+    name = "generator",
+    srcs = ["generator.py"],
+    deps = ["//sum:constraints_py"],
 )
 
-filegroup(
-    name = "sample_outputs",
-    srcs = glob(["*.out"]),
-)
-
-sample_test(
-    name = "sample_test",
-    files = [":sample_outputs"],
-    judge = ":judge",
-)
-
-dataset_derive(
-    name = "dataset",
-    exec = "//sum/cpp",
-    dataset = ":inputs",
+dataset_generate(
+    name = "inputs_generated",
+    exec = ":generator",
 )
 
 dataset_merge(
@@ -28,15 +17,15 @@ dataset_merge(
     datasets = [":inputs_generated"],
 )
 
-dataset_generate(
-    name = "inputs_generated",
-    exec = ":generator",
+dataset_derive(
+    name = "dataset",
+    exec = "//sum/cpp",
+    dataset = ":inputs",
 )
 
-py_binary(
-    name = "generator",
-    srcs = ["generator.py"],
-    deps = ["//sum:constraints_py"],
+simple_judge(
+    name = "judge",
+    dataset = ":dataset",
 )
 
 py_binary(
@@ -49,4 +38,15 @@ dataset_test(
     name = "dataset_test",
     exec = ":validator",
     dataset = ":dataset",
+)
+
+filegroup(
+    name = "sample_outputs",
+    srcs = glob(["*.out"]),
+)
+
+sample_test(
+    name = "sample_test",
+    files = [":sample_outputs"],
+    judge = ":judge",
 )

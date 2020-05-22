@@ -1,4 +1,4 @@
-package(default_visibility=["//visibility:public"])
+package(default_visibility=["//sqrt:__subpackages__"])
 
 py_binary(
     name = "python",

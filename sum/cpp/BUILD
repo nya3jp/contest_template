@@ -1,4 +1,4 @@
-package(default_visibility=["//visibility:public"])
+package(default_visibility=["//sum:__subpackages__"])
 
 cc_binary(
     name = "cpp",

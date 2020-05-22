@@ -1,8 +1,8 @@
-package(default_visibility=["//visibility:public"])
+package(default_visibility=["//sqrt:__subpackages__"])
 
-markdown(
-    name = "statement",
-    src = ":statement_subst",
+py_yaml_library(
+    name = "constraints_py",
+    src = "constraints.yaml",
 )
 
 jinja2_template(
@@ -13,7 +13,7 @@ jinja2_template(
     dataset = "//sqrt/judge:dataset",
 )
 
-py_yaml_library(
-    name = "constraints_py",
-    src = "constraints.yaml",
+markdown(
+    name = "statement",
+    src = ":statement_subst",
 )
