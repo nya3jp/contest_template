@@ -20,6 +20,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           path: main
+      - name: Build all
+        run: |
+          cd $GITHUB_WORKSPACE/main
+          bazel build //...
       - name: Run tests
         run: |
           cd $GITHUB_WORKSPACE/main
