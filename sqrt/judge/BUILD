@@ -4,26 +4,28 @@ simple_judge(
     name = "judge",
     dataset = ":dataset",
     comparator = ":comparator",
-    input_extension = "in",
-    answer_extension = "golden",
+)
+
+sample_test(
+    name = "sample_test",
+    files = glob(["*.out"]),
+    judge = ":judge",
 )
 
 dataset_derive(
     name = "dataset",
     exec = "//sqrt/python",
-    dataset = ":dataset_merged",
-    input_extension = "in",
-    output_extension = "golden",
+    dataset = ":input",
 )
 
 dataset_merge(
-    name = "dataset_merged",
-    files = glob(["*.in", "*.out"]),
-    datasets = [":dataset_generated"],
+    name = "input",
+    files = glob(["*.in"]),
+    datasets = [":input_generated"],
 )
 
 dataset_generate(
-    name = "dataset_generated",
+    name = "input_generated",
     exec = ":generator",
 )
 

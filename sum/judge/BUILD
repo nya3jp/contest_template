@@ -5,22 +5,26 @@ simple_judge(
     dataset = ":dataset",
 )
 
+sample_test(
+    name = "sample_test",
+    files = glob(["*.out"]),
+    judge = ":judge",
+)
+
 dataset_derive(
     name = "dataset",
     exec = "//sum/cpp",
-    dataset = ":dataset_merged",
-    input_extension = "in",
-    output_extension = "diff",
+    dataset = ":input",
 )
 
 dataset_merge(
-    name = "dataset_merged",
-    files = glob(["*.in", "*.diff"]),
-    datasets = [":dataset_generated"],
+    name = "input",
+    files = glob(["*.in"]),
+    datasets = [":input_generated"],
 )
 
 dataset_generate(
-    name = "dataset_generated",
+    name = "input_generated",
     exec = ":generator",
 )
 
