@@ -16,140 +16,58 @@
 | //sum/python:python_test | 🍀 | All accepted |
 # Solution Details
 
-## //sqrt/judge:sample_test 🍀
+## //sqrt/judge:judge
 
-All accepted
+| Test case | sample_test | python_test |
+| --- | --- | --- |
+| 00-sample1 | 0.0s | 0.1s |
+| 00-sample2 | 0.0s | 0.1s |
+| 00-sample3 | 0.0s | 0.1s |
+| 50-random00 |  | 0.1s |
+| 50-random01 |  | 0.1s |
+| 50-random02 |  | 0.1s |
+| 50-random03 |  | 0.1s |
+| 50-random04 |  | 0.1s |
+| 50-random05 |  | 0.1s |
+| 50-random06 |  | 0.1s |
+| 50-random07 |  | 0.1s |
+| 50-random08 |  | 0.1s |
+| 50-random09 |  | 0.1s |
+| 50-random10 |  | 0.1s |
+| 50-random11 |  | 0.1s |
+| 50-random12 |  | 0.1s |
+| 50-random13 |  | 0.1s |
+| 50-random14 |  | 0.1s |
+| 50-random15 |  | 0.1s |
+| 50-random16 |  | 0.1s |
+| 50-random17 |  | 0.1s |
+| 50-random18 |  | 0.1s |
+| 50-random19 |  | 0.1s |
+## //sum/judge:judge
 
-| Test case | Result | Time | Message |
-| --- | --- | ---: | --- |
-| 00-sample1 | accepted | 0.0s | OK |
-| 00-sample2 | accepted | 0.0s | OK |
-| 00-sample3 | accepted | 0.0s | OK |
-## //sqrt/python:python_test 🍀
-
-All accepted
-
-| Test case | Result | Time | Message |
-| --- | --- | ---: | --- |
-| 00-sample1 | accepted | 0.1s | OK |
-| 00-sample2 | accepted | 0.0s | OK |
-| 00-sample3 | accepted | 0.0s | OK |
-| 50-random00 | accepted | 0.0s | OK |
-| 50-random01 | accepted | 0.1s | OK |
-| 50-random02 | accepted | 0.0s | OK |
-| 50-random03 | accepted | 0.0s | OK |
-| 50-random04 | accepted | 0.0s | OK |
-| 50-random05 | accepted | 0.0s | OK |
-| 50-random06 | accepted | 0.0s | OK |
-| 50-random07 | accepted | 0.0s | OK |
-| 50-random08 | accepted | 0.0s | OK |
-| 50-random09 | accepted | 0.0s | OK |
-| 50-random10 | accepted | 0.0s | OK |
-| 50-random11 | accepted | 0.0s | OK |
-| 50-random12 | accepted | 0.0s | OK |
-| 50-random13 | accepted | 0.0s | OK |
-| 50-random14 | accepted | 0.0s | OK |
-| 50-random15 | accepted | 0.0s | OK |
-| 50-random16 | accepted | 0.0s | OK |
-| 50-random17 | accepted | 0.0s | OK |
-| 50-random18 | accepted | 0.0s | OK |
-| 50-random19 | accepted | 0.0s | OK |
-## //sum/cpp:cpp_test 🍀
-
-All accepted
-
-| Test case | Result | Time | Message |
-| --- | --- | ---: | --- |
-| 00-sample1 | accepted | 0.0s | OK |
-| 00-sample2 | accepted | 0.0s | OK |
-| 10-minimum | accepted | 0.0s | OK |
-| 11-maximum | accepted | 0.0s | OK |
-| 50-random00 | accepted | 0.0s | OK |
-| 50-random01 | accepted | 0.0s | OK |
-| 50-random02 | accepted | 0.0s | OK |
-| 50-random03 | accepted | 0.0s | OK |
-| 50-random04 | accepted | 0.0s | OK |
-| 50-random05 | accepted | 0.0s | OK |
-| 50-random06 | accepted | 0.0s | OK |
-| 50-random07 | accepted | 0.0s | OK |
-| 50-random08 | accepted | 0.0s | OK |
-| 50-random09 | accepted | 0.0s | OK |
-| 50-random10 | accepted | 0.0s | OK |
-| 50-random11 | accepted | 0.0s | OK |
-| 50-random12 | accepted | 0.0s | OK |
-| 50-random13 | accepted | 0.0s | OK |
-| 50-random14 | accepted | 0.0s | OK |
-| 50-random15 | accepted | 0.0s | OK |
-| 50-random16 | accepted | 0.0s | OK |
-| 50-random17 | accepted | 0.0s | OK |
-| 50-random18 | accepted | 0.0s | OK |
-| 50-random19 | accepted | 0.0s | OK |
-## //sum/cpp_WA:cpp_WA_test 🍀
-
-00-sample1: Rejected as expected: Judge exited with code 1
-
-| Test case | Result | Time | Message |
-| --- | --- | ---: | --- |
-| 00-sample1 | rejected | 0.0s | Judge exited with code 1 |
-| 00-sample2 | rejected | 0.0s | Judge exited with code 1 |
-| 10-minimum | accepted | 0.0s | OK |
-| 11-maximum | rejected | 0.0s | Judge exited with code 1 |
-| 50-random00 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random01 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random02 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random03 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random04 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random05 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random06 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random07 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random08 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random09 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random10 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random11 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random12 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random13 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random14 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random15 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random16 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random17 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random18 | rejected | 0.0s | Judge exited with code 1 |
-| 50-random19 | rejected | 0.0s | Judge exited with code 1 |
-## //sum/judge:sample_test 🍀
-
-All accepted
-
-| Test case | Result | Time | Message |
-| --- | --- | ---: | --- |
-| 00-sample1 | accepted | 0.0s | OK |
-| 10-minimum | accepted | 0.0s | OK |
-| 11-maximum | accepted | 0.0s | OK |
-## //sum/python:python_test 🍀
-
-All accepted
-
-| Test case | Result | Time | Message |
-| --- | --- | ---: | --- |
-| 00-sample1 | accepted | 0.0s | OK |
-| 00-sample2 | accepted | 0.0s | OK |
-| 10-minimum | accepted | 0.0s | OK |
-| 11-maximum | accepted | 0.0s | OK |
-| 50-random00 | accepted | 0.0s | OK |
-| 50-random01 | accepted | 0.0s | OK |
-| 50-random02 | accepted | 0.0s | OK |
-| 50-random03 | accepted | 0.0s | OK |
-| 50-random04 | accepted | 0.0s | OK |
-| 50-random05 | accepted | 0.0s | OK |
-| 50-random06 | accepted | 0.0s | OK |
-| 50-random07 | accepted | 0.0s | OK |
-| 50-random08 | accepted | 0.0s | OK |
-| 50-random09 | accepted | 0.0s | OK |
-| 50-random10 | accepted | 0.0s | OK |
-| 50-random11 | accepted | 0.0s | OK |
-| 50-random12 | accepted | 0.0s | OK |
-| 50-random13 | accepted | 0.0s | OK |
-| 50-random14 | accepted | 0.0s | OK |
-| 50-random15 | accepted | 0.0s | OK |
-| 50-random16 | accepted | 0.0s | OK |
-| 50-random17 | accepted | 0.0s | OK |
-| 50-random18 | accepted | 0.0s | OK |
-| 50-random19 | accepted | 0.0s | OK |
+| Test case | cpp_test | cpp_WA_test | sample_test | python_test |
+| --- | --- | --- | --- | --- |
+| 00-sample1 | 0.0s | Judge exited with code 1 | 0.0s | 0.1s |
+| 00-sample2 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 10-minimum | 0.0s | 0.0s | 0.0s | 0.1s |
+| 11-maximum | 0.0s | Judge exited with code 1 | 0.0s | 0.1s |
+| 50-random00 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random01 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random02 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random03 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random04 | 0.0s | Judge exited with code 1 |  | 0.0s |
+| 50-random05 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random06 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random07 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random08 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random09 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random10 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random11 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random12 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random13 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random14 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random15 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random16 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random17 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random18 | 0.0s | Judge exited with code 1 |  | 0.1s |
+| 50-random19 | 0.0s | Judge exited with code 1 |  | 0.1s |
