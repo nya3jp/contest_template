@@ -16,7 +16,7 @@ jobs:
           echo "deb [arch=amd64] https://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
           sudo apt update
           sudo apt install bazel
-      - name: Checkout the repository (master)
+      - name: Checkout the repository
         uses: actions/checkout@v2
         with:
           path: main
@@ -28,18 +28,18 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/main
           bazel test --keep_going --test_strategy=exclusive --build_event_json_file=$GITHUB_WORKSPACE/build-events.jsonl //...
-      - name: Checkout the repository (report)
-        uses: actions/checkout@v2
-        with:
-          path: report
-          ref: report
       - name: Upload test reports
         run: |
           cd $GITHUB_WORKSPACE/main
           bazel run @rules_contest//contest:render_test_results -- $GITHUB_WORKSPACE/build-events.jsonl > $GITHUB_WORKSPACE/report.md
           git config --global user.name "Automated Testing"
           git config --global user.email "testing@example.com"
-          cd $GITHUB_WORKSPACE/report
+          cd $GITHUB_WORKSPACE
+          mkdir report
+          cd report
+          git init
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+          git fetch --depth=1 origin report && git checkout -t origin/report || git checkout -b report
           cp $GITHUB_WORKSPACE/report.md README.md
           git add README.md
           git commit -a --allow-empty -m "Test results for commit ${{ github.sha }}"
