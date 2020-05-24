@@ -23,7 +23,7 @@ document.
 
 ## Documentation
 
-TODO
+Documentation is available at https://rules-contest.readthedocs.io/.
 
 
 [Bazel]: https://bazel.build/
