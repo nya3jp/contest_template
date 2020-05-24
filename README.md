@@ -51,8 +51,8 @@
 | **00-sample2** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **10-minimum** | 0.0s | 0.0s | 0.0s | 0.1s |
 | **11-maximum** | 0.0s | Judge exited with code 1 | 0.0s | 0.1s |
-| **50-random00** | 0.0s | Judge exited with code 1 |  | 0.1s |
-| **50-random01** | 0.0s | Judge exited with code 1 |  | 0.1s |
+| **50-random00** | 0.0s | Judge exited with code 1 |  | 0.0s |
+| **50-random01** | 0.0s | Judge exited with code 1 |  | 0.0s |
 | **50-random02** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **50-random03** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **50-random04** | 0.0s | Judge exited with code 1 |  | 0.1s |
@@ -66,7 +66,7 @@
 | **50-random12** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **50-random13** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **50-random14** | 0.0s | Judge exited with code 1 |  | 0.1s |
-| **50-random15** | 0.0s | Judge exited with code 1 |  | 0.1s |
+| **50-random15** | 0.0s | Judge exited with code 1 |  | 0.0s |
 | **50-random16** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **50-random17** | 0.0s | Judge exited with code 1 |  | 0.1s |
 | **50-random18** | 0.0s | Judge exited with code 1 |  | 0.1s |
