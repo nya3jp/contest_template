@@ -1,5 +1,7 @@
 package(default_visibility = ["//sum:__subpackages__"])
 
+load("@rules_contest//contest:defs.bzl", "solution_test")
+
 py_binary(
     name = "python",
     srcs = ["python.py"],

@@ -1,5 +1,12 @@
 package(default_visibility = ["//sum:__subpackages__"])
 
+load(
+    "@rules_contest//contest:defs.bzl",
+    "jinja2_template",
+    "markdown",
+    "py_yaml_library",
+)
+
 py_yaml_library(
     name = "constraints_py",
     src = "constraints.yaml",

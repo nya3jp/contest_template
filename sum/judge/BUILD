@@ -1,5 +1,15 @@
 package(default_visibility = ["//sum:__subpackages__"])
 
+load(
+    "@rules_contest//contest:defs.bzl",
+    "dataset_derive",
+    "dataset_generate",
+    "dataset_merge",
+    "dataset_test",
+    "sample_test",
+    "simple_judge",
+)
+
 py_binary(
     name = "generator",
     srcs = ["generator.py"],
