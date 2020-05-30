@@ -1,4 +1,4 @@
-package(default_visibility=["//sum:__subpackages__"])
+package(default_visibility = ["//sum:__subpackages__"])
 
 cc_binary(
     name = "cpp_WA",
@@ -7,7 +7,7 @@ cc_binary(
 
 solution_test(
     name = "cpp_WA_test",
-    solution = ":cpp_WA",
     judge = "//sum/judge",
-    judge_args = ["--expect=reject_any"]
+    judge_args = ["--expect=reject_any"],
+    solution = ":cpp_WA",
 )

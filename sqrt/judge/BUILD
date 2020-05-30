@@ -1,4 +1,4 @@
-package(default_visibility=["//sqrt:__subpackages__"])
+package(default_visibility = ["//sqrt:__subpackages__"])
 
 py_binary(
     name = "generator",
@@ -13,14 +13,14 @@ dataset_generate(
 
 dataset_merge(
     name = "inputs",
-    files = glob(["*.in"]),
     datasets = [":inputs_generated"],
+    files = glob(["*.in"]),
 )
 
 dataset_derive(
     name = "dataset",
-    exec = "//sqrt/python",
     dataset = ":inputs",
+    exec = "//sqrt/python",
 )
 
 py_binary(
@@ -31,8 +31,8 @@ py_binary(
 
 simple_judge(
     name = "judge",
-    dataset = ":dataset",
     comparator = ":comparator",
+    dataset = ":dataset",
 )
 
 py_binary(
@@ -43,8 +43,8 @@ py_binary(
 
 dataset_test(
     name = "dataset_test",
-    exec = ":validator",
     dataset = ":dataset",
+    exec = ":validator",
 )
 
 filegroup(

@@ -1,4 +1,4 @@
-package(default_visibility=["//sum:__subpackages__"])
+package(default_visibility = ["//sum:__subpackages__"])
 
 cc_binary(
     name = "cpp",
@@ -7,6 +7,6 @@ cc_binary(
 
 solution_test(
     name = "cpp_test",
-    solution = ":cpp",
     judge = "//sum/judge",
+    solution = ":cpp",
 )

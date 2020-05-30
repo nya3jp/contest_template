@@ -1,4 +1,4 @@
-package(default_visibility=["//sqrt:__subpackages__"])
+package(default_visibility = ["//sqrt:__subpackages__"])
 
 py_binary(
     name = "python",
@@ -8,6 +8,6 @@ py_binary(
 
 solution_test(
     name = "python_test",
-    solution = ":python",
     judge = "//sqrt/judge",
+    solution = ":python",
 )

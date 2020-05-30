@@ -1,4 +1,4 @@
-package(default_visibility=["//sum:__subpackages__"])
+package(default_visibility = ["//sum:__subpackages__"])
 
 py_binary(
     name = "generator",
@@ -13,14 +13,14 @@ dataset_generate(
 
 dataset_merge(
     name = "inputs",
-    files = glob(["*.in"]),
     datasets = [":inputs_generated"],
+    files = glob(["*.in"]),
 )
 
 dataset_derive(
     name = "dataset",
-    exec = "//sum/cpp",
     dataset = ":inputs",
+    exec = "//sum/cpp",
 )
 
 simple_judge(
@@ -36,8 +36,8 @@ py_binary(
 
 dataset_test(
     name = "dataset_test",
-    exec = ":validator",
     dataset = ":dataset",
+    exec = ":validator",
 )
 
 filegroup(
