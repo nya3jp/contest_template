@@ -13,6 +13,8 @@ load(
 py_binary(
     name = "generator",
     srcs = ["generator.py"],
+    python_version = "PY3",
+    srcs_version = "PY3",
     deps = ["//sum:constraints_py"],
 )
 
@@ -41,6 +43,8 @@ simple_judge(
 py_binary(
     name = "validator",
     srcs = ["validator.py"],
+    python_version = "PY3",
+    srcs_version = "PY3",
     deps = ["//sum:constraints_py"],
 )
 
