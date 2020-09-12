@@ -32,7 +32,7 @@ dataset_merge(
 dataset_derive(
     name = "dataset",
     dataset = ":inputs",
-    exec = "//sqrt/python",
+    exec = "//sqrt/solutions:python",
 )
 
 py_binary(
