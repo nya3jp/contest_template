@@ -32,7 +32,7 @@ dataset_merge(
 dataset_derive(
     name = "dataset",
     dataset = ":inputs",
-    exec = "//sum/cpp",
+    exec = "//sum/solutions:cpp",
 )
 
 simple_judge(
