@@ -16,7 +16,7 @@
 | //sum/solutions:python_test | 🍀 | All accepted |
 # Solution Details
 
-## @//sqrt/judge:judge
+## @@//sqrt/judge:judge
 
 | Test case | sample_test | python_test |
 | --- | --- | --- |
@@ -43,7 +43,7 @@
 | **50-random17** |  | 0.0s |
 | **50-random18** |  | 0.0s |
 | **50-random19** |  | 0.0s |
-## @//sum/judge:judge
+## @@//sum/judge:judge
 
 | Test case | sample_test | cpp_WA_test | cpp_test | python_test |
 | --- | --- | --- | --- | --- |
