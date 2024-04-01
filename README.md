@@ -17,7 +17,7 @@ document.
 
 ## Running tests locally
 
-1. Install [Bazel].
+1. [Install Bazel].
 2. Run `bazel test //...`
 
 
@@ -30,3 +30,4 @@ Documentation is available at https://rules-contest.readthedocs.io/.
 [rules_contest]: https://github.com/nya3jp/rules_contest
 [Use this template]: https://help.github.com/articles/creating-a-repository-from-a-template/
 [GitHub Actions]: https://github.com/features/actions
+[Install Bazel]: https://bazel.build/install
